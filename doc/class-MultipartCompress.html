@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class MultipartCompress | MultipartCompress</title>
+
+	<script type="text/javascript" src="resources/combined.js?1889508232"></script>
+	<script type="text/javascript" src="elementlist.js?1295653862"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-MultipartCompress.html">MultipartCompress</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="multipartcompress-api-documentation.zip" title="Download documentation as ZIP archive"><span>Download</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class MultipartCompress</h1>
+
+
+	<div class="description">
+	
+<p>This PHP class compact and split files and merge and decompact files.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+		<b>Located at</b> <a href="source-class-MultipartCompress.html#20-126" title="Go to source code">MultipartCompress.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="zip" id="_zip">
+
+		<td class="attributes"><code>
+			 public static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_zip">#</a>
+		<code><a href="source-class-MultipartCompress.html#25-57" title="Go to source code">zip</a>( <span>string <var>$i</var></span>, <span>string <var>$o</var></span>, <span>integer <var>$s</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Compact a file in multipart zip archive.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compact a file in multipart zip archive.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$i</var></dt>
+					<dd><code>string</code><br>$i The file to compact.</dd>
+					<dt><var>$o</var></dt>
+					<dd><code>string</code><br>$o The zip archive (*.zip).</dd>
+					<dt><var>$s</var></dt>
+					<dd><code>integer</code><br>$s The mnax size (in byte) for the parts. 0 to no parts.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Return number of parts created.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="split" id="_split">
+
+		<td class="attributes"><code>
+			 protected static
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_split">#</a>
+		<code><a href="source-class-MultipartCompress.html#59-81" title="Go to source code">split</a>( <span>string <var>$i</var></span>, <span>integer <var>$s</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Split the zip archive.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Split the zip archive.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$i</var></dt>
+					<dd><code>string</code><br>$i The zip archive.</dd>
+					<dt><var>$s</var></dt>
+					<dd><code>integer</code><br>$s The max size for the parts.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>Return the number of parts created.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="unzip" id="_unzip">
+
+		<td class="attributes"><code>
+			 public static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_unzip">#</a>
+		<code><a href="source-class-MultipartCompress.html#83-110" title="Go to source code">unzip</a>( <span>string <var>$i</var></span>, <span>string <var>$o</var></span>, <span>integer <var>$p</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Decompact the zip archive.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Decompact the zip archive.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$i</var></dt>
+					<dd><code>string</code><br>$i The zip archive (*.zip).</dd>
+					<dt><var>$o</var></dt>
+					<dd><code>string</code><br>$o The directory name for extract.</dd>
+					<dt><var>$p</var></dt>
+					<dd><code>integer</code><br>$p Number of parts of the zip archive.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Return TRUE for success or FALSE for fail.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="merge" id="_merge">
+
+		<td class="attributes"><code>
+			 protected static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_merge">#</a>
+		<code><a href="source-class-MultipartCompress.html#112-125" title="Go to source code">merge</a>( <span>string <var>$i</var></span>, <span>integer <var>$p</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Merge the parts of zip archive.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Merge the parts of zip archive.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$i</var></dt>
+					<dd><code>string</code><br>$i The zip archive (*.zip).</dd>
+					<dt><var>$p</var></dt>
+					<dd><code>integer</code><br>$p Number of parts of the zip archive.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Return TRUE for success or FALSE for fail.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		MultipartCompress API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
